@@ -1,0 +1,2 @@
+class ScaleGame < ApplicationRecord
+end

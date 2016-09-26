@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Twentyfortyeight Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Moves</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @twentyfortyeight_games.each do |twentyfortyeight_game| %>
+      <tr>
+        <td><%= twentyfortyeight_game.moves %></td>
+        <td><%= link_to 'Show', twentyfortyeight_game %></td>
+        <td><%= link_to 'Edit', edit_twentyfortyeight_game_path(twentyfortyeight_game) %></td>
+        <td><%= link_to 'Destroy', twentyfortyeight_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Twentyfortyeight Game', new_twentyfortyeight_game_path %>

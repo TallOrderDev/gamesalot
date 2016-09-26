@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @ball.number %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @ball.weight %>
+</p>
+
+<p>
+  <strong>Scale game:</strong>
+  <%= @ball.scale_game %>
+</p>
+
+<%= link_to 'Edit', edit_ball_path(@ball) %> |
+<%= link_to 'Back', balls_path %>

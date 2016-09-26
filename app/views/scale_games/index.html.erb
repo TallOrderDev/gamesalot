@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Scale Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weigh count</th>
+      <th>Ball count</th>
+      <th>Succeeded</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scale_games.each do |scale_game| %>
+      <tr>
+        <td><%= scale_game.weigh_count %></td>
+        <td><%= scale_game.ball_count %></td>
+        <td><%= scale_game.succeeded %></td>
+        <td><%= link_to 'Show', scale_game %></td>
+        <td><%= link_to 'Edit', edit_scale_game_path(scale_game) %></td>
+        <td><%= link_to 'Destroy', scale_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scale Game', new_scale_game_path %>

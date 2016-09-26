@@ -1,0 +1,2 @@
+module ScaleGamesHelper
+end

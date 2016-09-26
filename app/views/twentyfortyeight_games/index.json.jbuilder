@@ -1,0 +1,1 @@
+json.array! @twentyfortyeight_games, partial: 'twentyfortyeight_games/twentyfortyeight_game', as: :twentyfortyeight_game

@@ -1,0 +1,1 @@
+json.partial! "scale_games/scale_game", scale_game: @scale_game

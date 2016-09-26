@@ -1,0 +1,1 @@
+json.array! @scale_games, partial: 'scale_games/scale_game', as: :scale_game

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  weight: 
+  scale_game: one
+
+two:
+  number: MyString
+  weight: 
+  scale_game: two

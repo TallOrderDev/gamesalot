@@ -1,0 +1,2 @@
+class TwentyfortyeightGame < ApplicationRecord
+end

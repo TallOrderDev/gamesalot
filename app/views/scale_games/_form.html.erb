@@ -1,0 +1,32 @@
+<%= form_for(scale_game) do |f| %>
+  <% if scale_game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(scale_game.errors.count, "error") %> prohibited this scale_game from being saved:</h2>
+
+      <ul>
+      <% scale_game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :weigh_count %>
+    <%= f.number_field :weigh_count %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ball_count %>
+    <%= f.text_field :ball_count %>
+  </div>
+
+  <div class="field">
+    <%= f.label :succeeded %>
+    <%= f.text_field :succeeded %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

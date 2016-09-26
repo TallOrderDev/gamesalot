@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Weigh count:</strong>
+  <%= @scale_game.weigh_count %>
+</p>
+
+<p>
+  <strong>Ball count:</strong>
+  <%= @scale_game.ball_count %>
+</p>
+
+<p>
+  <strong>Succeeded:</strong>
+  <%= @scale_game.succeeded %>
+</p>
+
+<%= link_to 'Edit', edit_scale_game_path(@scale_game) %> |
+<%= link_to 'Back', scale_games_path %>
