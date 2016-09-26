@@ -24,6 +24,7 @@ class ScaleGamesController < ApplicationController
   # POST /scale_games
   # POST /scale_games.json
   def create
+    puts params
     @scale_game = ScaleGame.new(scale_game_params)
 
     respond_to do |format|
